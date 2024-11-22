@@ -4,5 +4,13 @@ class Calculator {
     this.currentOperandTextElement = currentOperandTextElement
     this.clear()
   }
-  }
+
+  chooseOperation(operation) {
+    if (this.currentOperand === '') return
+    if (this.previousOperand !== '') {
+      this.compute()
+    }
+  }}
+
+  
 
