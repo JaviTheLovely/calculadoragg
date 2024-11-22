@@ -10,7 +10,9 @@ class Calculator {
     if (this.previousOperand !== '') {
       this.compute()
     }
-  }}
-
+    this.operation = operation
+    this.previousOperand = this.currentOperand
+    this.currentOperand = ''
   
-
+  }
+} 
